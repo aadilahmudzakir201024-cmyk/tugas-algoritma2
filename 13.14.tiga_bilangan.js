@@ -4,6 +4,7 @@ let bil1 = Number(prompt('Masukan angka pertama : '))
 let bil2 = Number(prompt('Masukan angka kedua   : '))
 let bil3 = Number(prompt('Masukan angka ketiga  : '))
 
+// menentukan bilangan paling besar
 let bil_besar;
 if (bil1 > bil2 && bil1 > bil3)
     bil_besar = bil1
@@ -12,6 +13,7 @@ else if (bil2 > bil1 && bil2 > bil3)
 else if (bil3 > bil1 && bil3 > bil2)
     bil_besar = bil3
 
+// menentukan bilangan tengah
 let bil_tengah;
 if (bil1 < bil_besar)
     bil_tengah = bil1
@@ -20,6 +22,7 @@ else if (bil2 < bil_besar)
 else if (bil3 < bil_besar)
     bil_tengah = bil3
 
+// menentukan bilangan yang paling kecil
 let bil_kecil;
 if (bil1 < bil_tengah)
     bil_kecil = bil1

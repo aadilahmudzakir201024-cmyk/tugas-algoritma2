@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')({});
 
 let bil = Number(prompt('Masukan angka 1-4 : '))
 
+// menentukan tulisan angka
 switch (bil) {
     case 1:
         console.log('Satu')

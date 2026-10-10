@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')({});
 
 let jumlahbelanja = Number(prompt('Masukan Jumlah belanja : '))
 
+// membulatkan bilangan Jumlahbelanja
 let hasilakhir;
 let hasil;
 if(jumlahbelanja % 25 == 0 || jumlahbelanja % 50 == 0 || jumlahbelanja % 100 == 0) {

@@ -3,16 +3,11 @@ const prompt = require('prompt-sync')({})
 let angka1 = Number(prompt('Masukan Angka 1 (+) : '))
 let angka2 = Number(prompt('Masukan Angka 2 (+) : '))
 
-const R1 = 'I'
-const R5 = 'V'
-const R10 = 'X'
-const R50 = 'L'
-const R100 = 'C'
-
+// mengubah dari angka biasa ke romawi
 let hangka1;
 let hangka2;
 if(angka1 == 0) {
-    switch (angka2) {
+    switch (angka2) { // untuk angka 1 - 10
         case 1:
             hangka1 = ' '
             hangka2 = 'I'
@@ -57,11 +52,11 @@ if(angka1 == 0) {
 else if(angka1 === 4 && angka2 === 0) {
     hangka1 = ' X'
     hangka2 = 'L' }
-else if(angka1 === 9 && angka2 === 0) {
+else if(angka1 === 9 && angka2 === 0) { // khusus untuk angka 40 dan 90
     hangka1 = ' X'
     hangka2 = 'C' }
-else if(angka1 >= angka2 || angka1 <= angka2) {
-    switch (angka1) {
+else if(angka1 >= angka2 || angka1 <= angka2) { // untuk angka 11 - 99
+    switch (angka1) { 
         case 1:
             hangka1 = ' X'
             break;

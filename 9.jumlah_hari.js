@@ -3,6 +3,7 @@ const prompt = require('prompt-sync')({});
 let tahun = Number(prompt('Masukan tahun : '));
 let bulan = Number(prompt('Masukan bulan : '));
 
+// menentukan apakah tahun ini kabisat / tidak untuk bulan februari (2)
 let kabisat;
 if (tahun % 400 == 0) {
     kabisat = 'kabisat' }
@@ -13,8 +14,8 @@ else if (tahun % 4 == 0) {
 else {
     kabisat = 'bukan' }
 
+// menentukan jumlah hari
 let bulan2;
-
 switch (bulan) {
     case 1:
     case 3:
@@ -35,10 +36,9 @@ switch (bulan) {
 
     case 2:
         if (kabisat == 'kabisat') {
-            bulan2 = 29
-        } else {
-            bulan2 = 28
-        }
+            bulan2 = 29 }
+        else {
+            bulan2 = 28 }
         break;
 
     default:

@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')({});
 
 let nilai = Number(prompt('Masukan nilai ujian anda : '))
 
+// menentukan indeks sesuai nilai ujian
 let indeks;
 if (nilai >= 80)
     indeks = 'A'

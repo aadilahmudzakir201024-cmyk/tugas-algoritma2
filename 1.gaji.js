@@ -7,9 +7,11 @@ let jam = Number(prompt('Masukan jumlah jam kerja dalam seminggu : '))
 
 const JAM_NORMAL = 48 * 2000
 
+// menghitung gaji yang akan dibayar mingguan
+let JAM_LEMBUR;
 let TOTAL_UPAH;
 if (jam > 48) {
-    JAM_LEMBUR = (jam - 48) * 3000
+    JAM_LEMBUR = (jam - 48) * 3000 //menghitung jam lembur
     TOTAL_UPAH = JAM_NORMAL + JAM_LEMBUR
     }
 else {

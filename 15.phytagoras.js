@@ -5,11 +5,12 @@ let a = Number(promprt('Masukan panjang sisi a : '))
 let b = Number(promprt('Masukan panjang sisi b : '))
 let c = Number(promprt('Masukan panjang sisi c : '))
 
+// menentukan jenis segitiga
 let segitiga
-if(a <= b && b <= c) {
+if(a <= b && b <= c) { // mengecek apakah sudah sesuai ketentuan
     if((a * a) + (b * b) == c * c) {
         segitiga = 'siku-siku' }
-    else if(c * c < a * a + b * b) {
+    else if(c * c < a * a + b * b) { // menentukan jenis segitiga
         segitiga = 'lancip' }
     else if(c * c > a * a + b * b) {
         segitiga = 'tumpul' } }

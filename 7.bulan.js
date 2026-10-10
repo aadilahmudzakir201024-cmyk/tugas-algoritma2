@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')({});
 
 let bulan = Number(prompt('Masukan angka bulan (integer) : '))
 
+// menentukan nama bulan
 switch (bulan) {
     case 1:
         console.log('Januari')

@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')({sigint:true});
 
 let bil = Number(prompt('Masukan bilangan bulat : '))
 
+// proses menentukan apakah bilangan tsb adalah bilangan positif/negatif/nol
 let hasil;
 if (bil > 0)
     hasil = 'bilangan positif (+)'

@@ -13,9 +13,9 @@ let selisih = berat - ideal
 // menentukan apakah berat badannya ideal / tidak
 let hasil;
 if(berat >= ideal - 2 && berat <= ideal + 2)
-    hasil = 'Ideal'
-else
-    hasil = 'Tidak ideal'
+    hasil = 'Ideal' 
+else {
+    hasil = 'Tidak ideal' }
 
 console.log(`
 Berat badan anda ${hasil}`)
